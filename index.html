@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berlin-weekend: Kreuzberg 🍺</title>
+  <style>
+    :root {
+      --bg: #1a1a2e;
+      --card: #16213e;
+      --accent: #e94560;
+      --gold: #f5c518;
+      --text: #eee;
+      --muted: #aaa;
+      --green: #4ecca3;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem 3rem;
+      background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 50%, #1a1a2e 100%);
+      border-bottom: 3px solid var(--accent);
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin-bottom: 0.3rem;
+    }
+
+    .hero .subtitle {
+      font-size: 1.2rem;
+      color: var(--muted);
+    }
+
+    .hero .dates {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1.5rem;
+      background: var(--accent);
+      border-radius: 2rem;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin: 2.5rem 0;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+    }
+
+    h3 {
+      color: var(--gold);
+      margin: 1.2rem 0 0.5rem;
+      font-size: 1.15rem;
+    }
+
+    p, li {
+      color: #ddd;
+      margin-bottom: 0.4rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li::before {
+      content: "→ ";
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 1.2rem;
+      border: 1px solid #2a2a4a;
+      transition: transform 0.15s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+    }
+
+    .card .name {
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--gold);
+    }
+
+    .card .desc {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin: 0.3rem 0;
+    }
+
+    .card .price {
+      color: var(--green);
+      font-weight: 600;
+    }
+
+    .card a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+
+    .card a:hover { text-decoration: underline; }
+
+    .day {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.2rem;
+      border-left: 4px solid var(--accent);
+    }
+
+    .day-header {
+      font-size: 1.3rem;
+      font-weight: 800;
+      margin-bottom: 0.8rem;
+      color: var(--gold);
+    }
+
+    .day h3 {
+      color: var(--accent);
+      font-size: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .day h3:first-of-type { margin-top: 0.5rem; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.8rem;
+      font-size: 0.92rem;
+    }
+
+    th {
+      text-align: left;
+      padding: 0.6rem;
+      background: var(--accent);
+      color: white;
+      font-weight: 600;
+    }
+
+    td {
+      padding: 0.5rem 0.6rem;
+      border-bottom: 1px solid #2a2a4a;
+    }
+
+    tr:hover td { background: rgba(233, 69, 96, 0.08); }
+
+    .beer-counter {
+      text-align: center;
+      padding: 2rem 1rem;
+      margin: 2rem 0;
+      background: linear-gradient(135deg, #0f3460, #1a1a2e);
+      border-radius: 12px;
+      border: 2px solid var(--gold);
+    }
+
+    .beer-counter .number {
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: var(--gold);
+    }
+
+    .beer-counter .label {
+      font-size: 1.1rem;
+      color: var(--muted);
+    }
+
+    .tip-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+
+    .tip {
+      background: var(--card);
+      border-radius: 10px;
+      padding: 1rem;
+      font-size: 0.9rem;
+      border: 1px solid #2a2a4a;
+    }
+
+    .tip strong {
+      color: var(--gold);
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-top: 1px solid #2a2a4a;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.8rem; }
+      .card-grid { grid-template-columns: 1fr; }
+      .tip-grid { grid-template-columns: 1fr; }
+      table { font-size: 0.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>Kreuzberg, Berlin</h1>
+  <p class="subtitle">5 pers &middot; 3 nätter &middot; mycket öl</p>
+  <div class="dates">18 – 21 juni 2026</div>
+</div>
+
+<div class="container">
+
+  <!-- ABOUT -->
+  <section>
+    <h2>Om Kreuzberg</h2>
+    <p>Berlins alternativa, mångkulturella hjärta. Gatukonst överallt, turkisk mat, billig öl och barer runt varje hörn. Delas i två halvor:</p>
+    <ul>
+      <li><strong>SO36</strong> (östra) – Rått, vilt, nattliv. Oranienstrasse, Kottbusser Tor.</li>
+      <li><strong>Bergmannkiez / SW61</strong> (västra) – Lugnare, mysigt, vintage, brunch.</li>
+    </ul>
+    <p style="margin-top:0.8rem; color:var(--muted); font-style:italic;">"36 brennt, 61 pennt" – 36 brinner, 61 sover.</p>
+  </section>
+
+  <!-- BOENDE -->
+  <section>
+    <h2>Boende</h2>
+    <p>Bo nära <strong>Kottbusser Tor</strong> (U1 + U8) – två tunnelbanelinjer, mitt i allt.</p>
+    <div class="card-grid">
+      <div class="card">
+        <div class="name">Airbnb nära Kotti</div>
+        <div class="desc">2-3 sovrum, eget kök för bakfyllefrukost</div>
+        <div class="price">~120-200 EUR/natt totalt</div>
+        <a href="https://www.airbnb.com/kreuzberg-germany/stays" target="_blank">Sök på Airbnb →</a>
+      </div>
+      <div class="card">
+        <div class="name">MEININGER Hotel</div>
+        <div class="desc">5-bäddsrum, alla i samma rum</div>
+        <div class="price">~80-120 EUR/natt</div>
+        <a href="https://www.meininger-hotels.com/en/" target="_blank">Boka direkt →</a>
+      </div>
+      <div class="card">
+        <div class="name">Grand Hostel Berlin Classic</div>
+        <div class="desc">4-7 bäddars sovsal, vacker 1800-talsbyggnad. Nära Hallesches Tor.</div>
+        <div class="price">~110-150 EUR/natt totalt</div>
+        <a href="https://grandhostel-berlin.de/en/rooms-listing/" target="_blank">Se rum →</a>
+      </div>
+      <div class="card">
+        <div class="name">36 Rooms Hostel</div>
+        <div class="desc">Charmigt hus från 1878, mitt i Kreuzberg</div>
+        <div class="price">~55-100 EUR/natt totalt</div>
+        <a href="https://36rooms.com/" target="_blank">Boka →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEMA -->
+  <section>
+    <h2>Schema</h2>
+
+    <div class="day">
+      <div class="day-header">Torsdag 18 juni – Ankomst</div>
+      <h3>Eftermiddag</h3>
+      <ul>
+        <li>Incheckning, orientering</li>
+        <li>Första Späti-öl vid Landwehrkanal</li>
+      </ul>
+      <h3>Kväll</h3>
+      <ul>
+        <li>Döner på <strong>Imren Grill</strong> eller <strong>Doyum</strong></li>
+        <li><strong>Würgeengel</strong> – 1920-talsstämning, 2-3 öl</li>
+        <li><strong>Wild at Heart</strong> – rockbar, billig öl, 3 st</li>
+        <li>Barhopping <strong>Oranienstrasse</strong> – 2 öl per stopp, minst 3 ställen</li>
+        <li>Späti-öl i handen mellan barerna</li>
+      </ul>
+    </div>
+
+    <div class="day">
+      <div class="day-header">Fredag 19 juni – Kultur, park & tungt ölschema</div>
+      <h3>Förmiddag</h3>
+      <ul>
+        <li>Brunch på <strong>Simitdchi Café</strong> (Kotti) – turkisk frukost + 2 Weißbier</li>
+      </ul>
+      <h3>Tidig eftermiddag</h3>
+      <ul>
+        <li><strong>Topography of Terror</strong> (gratis) eller <strong>Judiska museet</strong></li>
+        <li><strong>Golgatha Biergarten</strong> i Viktoriapark – 3 halvliter med panoramavy</li>
+      </ul>
+      <h3>Sen eftermiddag</h3>
+      <ul>
+        <li>Promenad längs <strong>Landwehrkanal</strong></li>
+        <li>Späti-stopp: fyrapack per person på kajkanten</li>
+      </ul>
+      <h3>Kväll</h3>
+      <ul>
+        <li><strong>Markthalle Neun</strong> – street food + minst 3 hantverksöl</li>
+        <li><strong>Schwarze Traube</strong> – speakeasy (knacka på dörren)</li>
+        <li><strong>Madame Claude</strong> – upp-och-ner-möbler, 2-3 öl</li>
+        <li><strong>SO36</strong> eller <strong>AEDEN</strong> till natten tar slut</li>
+      </ul>
+    </div>
+
+    <div class="day">
+      <div class="day-header">Lördag 20 juni – Tempelhofer, kanalen & sista kvällen</div>
+      <h3>Förmiddag</h3>
+      <ul>
+        <li>Brunch på <strong>Café Mugrabi</strong> – hummus botar allt. 2 Radler.</li>
+      </ul>
+      <h3>Tidig eftermiddag</h3>
+      <ul>
+        <li><strong>Südblock</strong> vid Kotti – 3 öl i ölträdgården</li>
+      </ul>
+      <h3>Eftermiddag</h3>
+      <ul>
+        <li><strong>Tempelhofer Feld</strong> – sixpack per person minimum. Öl på en landningsbana.</li>
+      </ul>
+      <h3>Sen eftermiddag</h3>
+      <ul>
+        <li><strong>Paul-Lincke-Ufer</strong> – 2-3 Späti-öl i solnedgången</li>
+      </ul>
+      <h3>Kväll</h3>
+      <ul>
+        <li>Middag på <strong>Spindler</strong> (2 stora Pilsner) eller <strong>Tulus Lotrek</strong> (boka i förväg!)</li>
+        <li>Sista rundan: <strong>Oranienstrasse</strong> eller <strong>Berghain</strong> om ni vågar</li>
+      </ul>
+    </div>
+
+    <div class="day">
+      <div class="day-header">Söndag 21 juni – Utcheckning</div>
+      <ul>
+        <li>Frukost. Packa. Överlev resan hem.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ÖL-COUNTER -->
+  <div class="beer-counter">
+    <div class="number">~30-40</div>
+    <div class="label">öl per person på hela helgen</div>
+    <p style="margin-top:0.5rem; color:var(--gold);">Budget: ca 80-120 EUR/person</p>
+  </div>
+
+  <!-- MAT -->
+  <section>
+    <h2>Mat</h2>
+    <table>
+      <thead>
+        <tr><th>Ställe</th><th>Vad</th><th>Var</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Imren Grill</td><td>Berlins bästa döner</td><td>Boppstr. 10</td></tr>
+        <tr><td>Doyum</td><td>Ocakbasi, Adana Kebap</td><td>Kottbusser Tor</td></tr>
+        <tr><td>Burgermeister</td><td>Kultburgar i ombyggd toalett</td><td>Schlesisches Tor</td></tr>
+        <tr><td>Markthalle Neun</td><td>Street food (torsdag 17-22)</td><td>Eisenbahnstr. 42</td></tr>
+        <tr><td>Turkiska marknaden</td><td>Gatumat & färskvaror (tis+fre)</td><td>Maybachufer</td></tr>
+        <tr><td>Simitdchi Café</td><td>Turkisk frukost</td><td>Kottbusser Tor</td></tr>
+        <tr><td>Café Mugrabi</td><td>Israelisk brunch</td><td>Görlitzer Park</td></tr>
+        <tr><td>Spindler</td><td>Modern europeiskt</td><td>Paul-Lincke-Ufer</td></tr>
+        <tr><td>Tulus Lotrek</td><td>1 Michelin-stjärna</td><td>Fichtestr. 24</td></tr>
+        <tr><td>Horvath</td><td>2 Michelin-stjärnor</td><td>Paul-Lincke-Ufer 44a</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- BARER -->
+  <section>
+    <h2>Barer & klubbar</h2>
+    <div class="card-grid">
+      <div class="card">
+        <div class="name">Golgatha</div>
+        <div class="desc">Ölträdgård i Viktoriapark, utsikt över hela Berlin</div>
+      </div>
+      <div class="card">
+        <div class="name">Südblock</div>
+        <div class="desc">Ölträdgård vid Kotti, folk-skådning</div>
+      </div>
+      <div class="card">
+        <div class="name">Würgeengel</div>
+        <div class="desc">1920-talsstämning, speglar & sammet</div>
+      </div>
+      <div class="card">
+        <div class="name">Schwarze Traube</div>
+        <div class="desc">Speakeasy – knacka på dörren</div>
+      </div>
+      <div class="card">
+        <div class="name">Wild at Heart</div>
+        <div class="desc">Rockbar, billig öl, live-musik</div>
+      </div>
+      <div class="card">
+        <div class="name">Madame Claude</div>
+        <div class="desc">Möblerna hänger upp-och-ner i taket</div>
+      </div>
+      <div class="card">
+        <div class="name">SO36</div>
+        <div class="desc">Legendarisk punk/queer-klubb sedan 70-talet</div>
+      </div>
+      <div class="card">
+        <div class="name">AEDEN</div>
+        <div class="desc">Techno, house, jazz, öppen scen</div>
+      </div>
+      <div class="card">
+        <div class="name">Berghain</div>
+        <div class="desc">Världens mest kända technoklubb. Mörka kläder, gå efter 01:00.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRAKTISKT -->
+  <section>
+    <h2>Praktiskt</h2>
+    <div class="tip-grid">
+      <div class="tip">
+        <strong>Tunnelbana</strong>
+        U1, U6, U7, U8. Kör hela natten fre-lör.
+      </div>
+      <div class="tip">
+        <strong>Biljetter</strong>
+        Inga spärrar men kontrollanter i civil. Böter 60 EUR. Stämpla alltid.
+      </div>
+      <div class="tip">
+        <strong>Kontanter</strong>
+        Många ställen är cash only. Ha euros på er.
+      </div>
+      <div class="tip">
+        <strong>Söndagar</strong>
+        Butiker stängda. Restauranger och kaféer öppna.
+      </div>
+      <div class="tip">
+        <strong>Späti-öl</strong>
+        1-2 EUR. Bar-öl 3-5 EUR. Kreuzberg är billigt.
+      </div>
+      <div class="tip">
+        <strong>Görlitzer Park</strong>
+        Undvik efter mörkret.
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  Berlin-weekend 2026 &middot; Kreuzberg or bust
+</footer>
+
+</body>
+</html>
