@@ -24,23 +24,23 @@
 
 ### Torsdag 18 juni – Ankomst & Prenzlauer Berg
 
-- **Eftermiddag:** Incheckning. Promenad längs **Kastanienallee** – kaféer, butiker, gatukonst. Första öl på **Prater Biergarten** (Berlins äldsta, sedan 1837).
-- **Kväll:** Currywurst på **Konnopke's Imbiss** (under U-banan vid Eberswalder). **Kulturbrauerei** – gammalt bryggeri, nu barer och kulturhus. Barhopping längs Oderberger/Lychener Straße, 2-3 ställen. Späti-öl i handen mellan barerna.
+- **Eftermiddag:** Incheckning. Promenad längs **Kastanienallee** – kaféer, butiker, gatukonst. Första ölen på **Prater Biergarten** (Berlins äldsta, sedan 1837) – 2-3 halvliter i solen.
+- **Kväll:** Currywurst på **Konnopke's Imbiss** (under U-banan vid Eberswalder). **Kulturbrauerei** – gammalt bryggeri, nu barer och kulturhus, 2-3 öl. Barhopping längs Oderberger/Lychener Straße – 2 öl per stopp, minst 3 ställen. Späti-öl i handen mellan barerna.
 
 ### Fredag 19 juni – Mitte & Kreuzberg
 
-- **Fm:** Frukost i kvarteret, sedan U2 till Mitte. **Brandenburger Tor**, **Reichstag** (boka kupolen gratis i förväg!), **Holocaust Memorial**.
-- **Tidig em:** **Checkpoint Charlie** eller **Topography of Terror** (gratis). Öl vid Spree – Monbijoupark eller Strandbar Mitte.
-- **Sen em:** U-bana till Kreuzberg. **Golgatha Biergarten** i Viktoriapark – 3 halvliter med panoramavy. Promenad längs **Landwehrkanal**, Späti-öl på kajkanten.
-- **Kväll:** Döner på **Imren Grill** eller **Doyum** vid Kotti. **Markthalle Neun** (street food + hantverksöl). **Würgeengel** → **Schwarze Traube** (speakeasy). Barhopping **Oranienstrasse** – 2 öl per stopp, minst 3 ställen. **SO36** eller **Madame Claude** till natten tar slut.
+- **Fm:** Frukost i kvarteret + 2 Weißbier för att sätta tonen, sedan U2 till Mitte. **Brandenburger Tor**, **Reichstag** (boka kupolen gratis i förväg!), **Holocaust Memorial**.
+- **Tidig em:** **Checkpoint Charlie** eller **Topography of Terror** (gratis). 2-3 öl vid Spree – Monbijoupark eller Strandbar Mitte.
+- **Sen em:** U-bana till Kreuzberg. **Golgatha Biergarten** i Viktoriapark – 3 halvliter med panoramavy. Promenad längs **Landwehrkanal** – Späti-stopp: fyrapack per person på kajkanten.
+- **Kväll:** Döner på **Imren Grill** eller **Doyum** vid Kotti. **Markthalle Neun** (street food + minst 3 hantverksöl från olika kranar). **Würgeengel** (2-3 öl) → **Schwarze Traube** (speakeasy). Barhopping **Oranienstrasse** – 2 öl per stopp, minst 3 ställen. **Madame Claude** (upp-och-ner-möbler, 2-3 öl) → **SO36** till natten tar slut.
 
 ### Lördag 20 juni – Friedrichshain, Tempelhof & sista kvällen
 
-- **Fm:** Brunch på **Café Mugrabi** (Kreuzberg) eller **The Barn** (Mitte). **East Side Gallery** – 1,3 km bemålad Berlinmur längs Spree.
-- **Tidig em:** **RAW Gelände** – nedlagt tågområde, nu street food, barer, klättring, loppis. Öl på **Holzmarkt** – kreativt strandområde vid Spree.
+- **Fm:** Återhämtningsbrunch på **Café Mugrabi** (Kreuzberg) – hummus botar allt. 2 Radler för att kickstarta systemet. **East Side Gallery** – 1,3 km bemålad Berlinmur längs Spree.
+- **Tidig em:** **RAW Gelände** – nedlagt tågområde, nu street food, barer, klättring, loppis. 2-3 öl. Sedan **Holzmarkt** – kreativt strandområde vid Spree, 2 halvliter.
 - **Em:** **Tempelhofer Feld** – före detta flygplats, nu park. Sixpack per person minimum. Öl på en landningsbana.
-- **Sen em:** **Klunkerkranich** – takbar på parkeringshus i Neukölln. Solnedgång över Berlin.
-- **Kväll:** Avslutningsmiddag på **Spindler** (vid kanalen) eller **Tulus Lotrek** (1 Michelin-stjärna, boka i förväg!). Sista rundan: **Weserstraße** (Neukölln), **Simon-Dach-Straße** (F'hain) eller **Berghain** om ni vågar.
+- **Sen em:** **Klunkerkranich** – takbar på parkeringshus i Neukölln. 2-3 öl i solnedgången över Berlin.
+- **Kväll:** Avslutningsmiddag på **Spindler** (vid kanalen, 2 stora Pilsner) eller **Tulus Lotrek** (1 Michelin-stjärna, boka i förväg!). Sista rundan: **Weserstraße** (Neukölln), **Simon-Dach-Straße** (F'hain) eller **Berghain** om ni vågar.
 
 ### Söndag 21 juni – Mauerpark & hemresa
 
