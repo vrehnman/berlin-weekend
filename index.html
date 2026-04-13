@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Berlin-weekend: Kreuzberg 🍺</title>
+  <title>Berlin-weekend 🍺</title>
   <style>
     :root {
       --bg: #1a1a2e;
@@ -115,6 +115,13 @@
       font-weight: 700;
       font-size: 1.05rem;
       color: var(--gold);
+    }
+
+    .card .area {
+      font-size: 0.8rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-top: 0.1rem;
     }
 
     .card .desc {
@@ -243,52 +250,48 @@
 <body>
 
 <div class="hero">
-  <h1>Kreuzberg, Berlin</h1>
+  <h1>Berlin</h1>
   <p class="subtitle">5 pers &middot; 3 nätter &middot; mycket öl</p>
   <div class="dates">18 – 21 juni 2026</div>
 </div>
 
 <div class="container">
 
-  <!-- ABOUT -->
+  <!-- STADSDELAR -->
   <section>
-    <h2>Om Kreuzberg</h2>
-    <p>Berlins alternativa, mångkulturella hjärta. Gatukonst överallt, turkisk mat, billig öl och barer runt varje hörn. Delas i två halvor:</p>
-    <ul>
-      <li><strong>SO36</strong> (östra) – Rått, vilt, nattliv. Oranienstrasse, Kottbusser Tor.</li>
-      <li><strong>Bergmannkiez / SW61</strong> (västra) – Lugnare, mysigt, vintage, brunch.</li>
-    </ul>
-    <p style="margin-top:0.8rem; color:var(--muted); font-style:italic;">"36 brennt, 61 pennt" – 36 brinner, 61 sover.</p>
+    <h2>Stadsdelarna</h2>
+    <div class="card-grid">
+      <div class="card">
+        <div class="name">Prenzlauer Berg</div>
+        <div class="desc">Hemmakvarteret. Mysiga kaféer, Kastanienallee, Kulturbrauerei, Mauerpark. Berlins äldsta ölträdgård (Prater) ligger här.</div>
+      </div>
+      <div class="card">
+        <div class="name">Mitte</div>
+        <div class="desc">Turisternas Berlin. Brandenburger Tor, Museum Island, Checkpoint Charlie, Hackescher Markt. Bra att bocka av dag 1.</div>
+      </div>
+      <div class="card">
+        <div class="name">Kreuzberg</div>
+        <div class="desc">Alternativt, mångkulturellt. Berlins bästa döner, billigaste öl, vildaste barer. Kottbusser Tor &amp; Oranienstrasse.</div>
+      </div>
+      <div class="card">
+        <div name="name">Friedrichshain</div>
+        <div class="desc">East Side Gallery, RAW Gelände, Simon-Dach-Straße. Berghain-land. Ungt och gritty.</div>
+      </div>
+      <div class="card">
+        <div class="name">Neukölln</div>
+        <div class="desc">Up-and-coming. Weserstraße för barhopping, Klunkerkranich takbar, Tempelhofer Feld.</div>
+      </div>
+    </div>
   </section>
 
   <!-- BOENDE -->
   <section>
     <h2>Boende</h2>
-    <p>Bo nära <strong>Kottbusser Tor</strong> (U1 + U8) – två tunnelbanelinjer, mitt i allt.</p>
     <div class="card-grid">
       <div class="card">
-        <div class="name">Airbnb nära Kotti</div>
-        <div class="desc">2-3 sovrum, eget kök för bakfyllefrukost</div>
-        <div class="price">~120-200 EUR/natt totalt</div>
-        <a href="https://www.airbnb.com/kreuzberg-germany/stays" target="_blank">Sök på Airbnb →</a>
-      </div>
-      <div class="card">
-        <div class="name">MEININGER Hotel</div>
-        <div class="desc">5-bäddsrum, alla i samma rum</div>
-        <div class="price">~80-120 EUR/natt</div>
-        <a href="https://www.meininger-hotels.com/en/" target="_blank">Boka direkt →</a>
-      </div>
-      <div class="card">
-        <div class="name">Grand Hostel Berlin Classic</div>
-        <div class="desc">4-7 bäddars sovsal, vacker 1800-talsbyggnad. Nära Hallesches Tor.</div>
-        <div class="price">~110-150 EUR/natt totalt</div>
-        <a href="https://grandhostel-berlin.de/en/rooms-listing/" target="_blank">Se rum →</a>
-      </div>
-      <div class="card">
-        <div class="name">36 Rooms Hostel</div>
-        <div class="desc">Charmigt hus från 1878, mitt i Kreuzberg</div>
-        <div class="price">~55-100 EUR/natt totalt</div>
-        <a href="https://36rooms.com/" target="_blank">Boka →</a>
+        <div class="name">Oderberger Straße 57</div>
+        <div class="desc">Prenzlauer Berg – nära Eberswalder Straße (U2). ~20 min till Kreuzberg med tunnelbana.</div>
+        <div class="price">Bokat!</div>
       </div>
     </div>
   </section>
@@ -298,76 +301,85 @@
     <h2>Schema</h2>
 
     <div class="day">
-      <div class="day-header">Torsdag 18 juni – Ankomst</div>
+      <div class="day-header">Torsdag 18 juni – Ankomst & Prenzlauer Berg</div>
       <h3>Eftermiddag</h3>
       <ul>
-        <li>Incheckning, orientering</li>
-        <li>Första Späti-öl vid Landwehrkanal</li>
+        <li>Incheckning på Oderberger Str.</li>
+        <li>Promenad längs <strong>Kastanienallee</strong> – kaféer, butiker, gatukonst</li>
+        <li>Första öl på <strong>Prater Biergarten</strong> – Berlins äldsta ölträdgård (sedan 1837)</li>
       </ul>
       <h3>Kväll</h3>
       <ul>
-        <li>Döner på <strong>Imren Grill</strong> eller <strong>Doyum</strong></li>
-        <li><strong>Würgeengel</strong> – 1920-talsstämning, 2-3 öl</li>
-        <li><strong>Wild at Heart</strong> – rockbar, billig öl, 3 st</li>
-        <li>Barhopping <strong>Oranienstrasse</strong> – 2 öl per stopp, minst 3 ställen</li>
+        <li>Currywurst på <strong>Konnopke's Imbiss</strong> under U-banan vid Eberswalder</li>
+        <li><strong>Kulturbrauerei</strong> – gammalt bryggeri, nu barer och kulturhus</li>
+        <li>Barhopping längs <strong>Oderberger/Lychener Straße</strong> – 2-3 ställen</li>
         <li>Späti-öl i handen mellan barerna</li>
       </ul>
     </div>
 
     <div class="day">
-      <div class="day-header">Fredag 19 juni – Kultur, park & tungt ölschema</div>
+      <div class="day-header">Fredag 19 juni – Mitte & Kreuzberg</div>
       <h3>Förmiddag</h3>
       <ul>
-        <li>Brunch på <strong>Simitdchi Café</strong> (Kotti) – turkisk frukost + 2 Weißbier</li>
+        <li>Frukost i kvarteret, sedan U2 till <strong>Mitte</strong></li>
+        <li><strong>Brandenburger Tor</strong>, <strong>Reichstag</strong> (boka kupolen gratis i förväg!)</li>
+        <li><strong>Holocaust Memorial</strong></li>
       </ul>
       <h3>Tidig eftermiddag</h3>
       <ul>
-        <li><strong>Topography of Terror</strong> (gratis) eller <strong>Judiska museet</strong></li>
-        <li><strong>Golgatha Biergarten</strong> i Viktoriapark – 3 halvliter med panoramavy</li>
+        <li><strong>Checkpoint Charlie</strong> eller <strong>Topography of Terror</strong> (gratis)</li>
+        <li>Öl vid <strong>Spree</strong> – Monbijoupark eller Strandbar Mitte</li>
       </ul>
       <h3>Sen eftermiddag</h3>
       <ul>
-        <li>Promenad längs <strong>Landwehrkanal</strong></li>
-        <li>Späti-stopp: fyrapack per person på kajkanten</li>
+        <li>U-bana ner till <strong>Kreuzberg</strong></li>
+        <li><strong>Golgatha Biergarten</strong> i Viktoriapark – 3 halvliter med panoramavy</li>
+        <li>Promenad längs <strong>Landwehrkanal</strong>, Späti-öl på kajkanten</li>
       </ul>
       <h3>Kväll</h3>
       <ul>
-        <li><strong>Markthalle Neun</strong> – street food + minst 3 hantverksöl</li>
+        <li>Döner på <strong>Imren Grill</strong> eller <strong>Doyum</strong> vid Kotti</li>
+        <li><strong>Markthalle Neun</strong> – street food + hantverksöl</li>
+        <li><strong>Würgeengel</strong> – 1920-talsstämning, cocktails</li>
         <li><strong>Schwarze Traube</strong> – speakeasy (knacka på dörren)</li>
-        <li><strong>Madame Claude</strong> – upp-och-ner-möbler, 2-3 öl</li>
-        <li><strong>SO36</strong> eller <strong>AEDEN</strong> till natten tar slut</li>
+        <li>Barhopping <strong>Oranienstrasse</strong> – 2 öl per stopp, minst 3 ställen</li>
+        <li><strong>SO36</strong> eller <strong>Madame Claude</strong> till natten tar slut</li>
       </ul>
     </div>
 
     <div class="day">
-      <div class="day-header">Lördag 20 juni – Tempelhofer, kanalen & sista kvällen</div>
+      <div class="day-header">Lördag 20 juni – Friedrichshain, Tempelhof & sista kvällen</div>
       <h3>Förmiddag</h3>
       <ul>
-        <li>Brunch på <strong>Café Mugrabi</strong> – hummus botar allt. 2 Radler.</li>
+        <li>Brunch på <strong>Café Mugrabi</strong> (Kreuzberg) eller <strong>The Barn</strong> (Mitte)</li>
+        <li><strong>East Side Gallery</strong> – 1,3 km bemålad Berlinmur längs Spree</li>
       </ul>
       <h3>Tidig eftermiddag</h3>
       <ul>
-        <li><strong>Südblock</strong> vid Kotti – 3 öl i ölträdgården</li>
+        <li><strong>RAW Gelände</strong> – nedlagt tågområde, nu street food, barer, klättring, loppis</li>
+        <li>Öl på <strong>Holzmarkt</strong> – kreativt strandområde vid Spree</li>
       </ul>
       <h3>Eftermiddag</h3>
       <ul>
-        <li><strong>Tempelhofer Feld</strong> – sixpack per person minimum. Öl på en landningsbana.</li>
+        <li><strong>Tempelhofer Feld</strong> – före detta flygplats, nu park. Sixpack per person minimum. Öl på en landningsbana.</li>
       </ul>
       <h3>Sen eftermiddag</h3>
       <ul>
-        <li><strong>Paul-Lincke-Ufer</strong> – 2-3 Späti-öl i solnedgången</li>
+        <li><strong>Klunkerkranich</strong> – takbar på ett parkeringshus i Neukölln. Solnedgång över Berlin.</li>
       </ul>
       <h3>Kväll</h3>
       <ul>
-        <li>Middag på <strong>Spindler</strong> (2 stora Pilsner) eller <strong>Tulus Lotrek</strong> (boka i förväg!)</li>
-        <li>Sista rundan: <strong>Oranienstrasse</strong> eller <strong>Berghain</strong> om ni vågar</li>
+        <li>Middag: <strong>Spindler</strong> vid kanalen eller <strong>Tulus Lotrek</strong> (1 stjärna, boka i förväg!)</li>
+        <li>Sista rundan: <strong>Weserstraße</strong> (Neukölln), <strong>Simon-Dach-Straße</strong> (F'hain) eller <strong>Berghain</strong> om ni vågar</li>
       </ul>
     </div>
 
     <div class="day">
-      <div class="day-header">Söndag 21 juni – Utcheckning</div>
+      <div class="day-header">Söndag 21 juni – Mauerpark & hemresa</div>
       <ul>
-        <li>Frukost. Packa. Överlev resan hem.</li>
+        <li><strong>Mauerpark loppis</strong> – stor söndagsmarknad, 5 min från boendet. Karaoke, street food, vintage.</li>
+        <li>Frukost/brunch i parken</li>
+        <li>Packa. Överlev resan hem.</li>
       </ul>
     </div>
   </section>
@@ -384,19 +396,19 @@
     <h2>Mat</h2>
     <table>
       <thead>
-        <tr><th>Ställe</th><th>Vad</th><th>Var</th></tr>
+        <tr><th>Ställe</th><th>Vad</th><th>Stadsdel</th></tr>
       </thead>
       <tbody>
-        <tr><td>Imren Grill</td><td>Berlins bästa döner</td><td>Boppstr. 10</td></tr>
-        <tr><td>Doyum</td><td>Ocakbasi, Adana Kebap</td><td>Kottbusser Tor</td></tr>
-        <tr><td>Burgermeister</td><td>Kultburgar i ombyggd toalett</td><td>Schlesisches Tor</td></tr>
-        <tr><td>Markthalle Neun</td><td>Street food (torsdag 17-22)</td><td>Eisenbahnstr. 42</td></tr>
-        <tr><td>Turkiska marknaden</td><td>Gatumat & färskvaror (tis+fre)</td><td>Maybachufer</td></tr>
-        <tr><td>Simitdchi Café</td><td>Turkisk frukost</td><td>Kottbusser Tor</td></tr>
-        <tr><td>Café Mugrabi</td><td>Israelisk brunch</td><td>Görlitzer Park</td></tr>
-        <tr><td>Spindler</td><td>Modern europeiskt</td><td>Paul-Lincke-Ufer</td></tr>
-        <tr><td>Tulus Lotrek</td><td>1 Michelin-stjärna</td><td>Fichtestr. 24</td></tr>
-        <tr><td>Horvath</td><td>2 Michelin-stjärnor</td><td>Paul-Lincke-Ufer 44a</td></tr>
+        <tr><td>Konnopke's Imbiss</td><td>Legendär currywurst under U-banan</td><td>Prenzlauer Berg</td></tr>
+        <tr><td>Imren Grill</td><td>Berlins bästa döner</td><td>Kreuzberg</td></tr>
+        <tr><td>Doyum</td><td>Ocakbasi, Adana Kebap</td><td>Kreuzberg</td></tr>
+        <tr><td>Burgermeister</td><td>Kultburgar i ombyggd toalett</td><td>Kreuzberg</td></tr>
+        <tr><td>Markthalle Neun</td><td>Street food (torsdag 17-22)</td><td>Kreuzberg</td></tr>
+        <tr><td>Turkiska marknaden</td><td>Gatumat & färskvaror (tis+fre)</td><td>Kreuzberg</td></tr>
+        <tr><td>Café Mugrabi</td><td>Israelisk brunch</td><td>Kreuzberg</td></tr>
+        <tr><td>Spindler</td><td>Modern europeiskt vid kanalen</td><td>Kreuzberg</td></tr>
+        <tr><td>Tulus Lotrek</td><td>1 Michelin-stjärna</td><td>Kreuzberg</td></tr>
+        <tr><td>Clärchens Ballhaus</td><td>Historisk danslokal med restaurang</td><td>Mitte</td></tr>
       </tbody>
     </table>
   </section>
@@ -406,39 +418,58 @@
     <h2>Barer & klubbar</h2>
     <div class="card-grid">
       <div class="card">
+        <div class="name">Prater Biergarten</div>
+        <div class="area">Prenzlauer Berg</div>
+        <div class="desc">Berlins äldsta ölträdgård, sedan 1837</div>
+      </div>
+      <div class="card">
         <div class="name">Golgatha</div>
+        <div class="area">Kreuzberg</div>
         <div class="desc">Ölträdgård i Viktoriapark, utsikt över hela Berlin</div>
       </div>
       <div class="card">
         <div class="name">Südblock</div>
+        <div class="area">Kreuzberg</div>
         <div class="desc">Ölträdgård vid Kotti, folk-skådning</div>
       </div>
       <div class="card">
         <div class="name">Würgeengel</div>
+        <div class="area">Kreuzberg</div>
         <div class="desc">1920-talsstämning, speglar & sammet</div>
       </div>
       <div class="card">
         <div class="name">Schwarze Traube</div>
+        <div class="area">Kreuzberg</div>
         <div class="desc">Speakeasy – knacka på dörren</div>
       </div>
       <div class="card">
-        <div class="name">Wild at Heart</div>
-        <div class="desc">Rockbar, billig öl, live-musik</div>
-      </div>
-      <div class="card">
         <div class="name">Madame Claude</div>
+        <div class="area">Kreuzberg</div>
         <div class="desc">Möblerna hänger upp-och-ner i taket</div>
       </div>
       <div class="card">
+        <div class="name">Klunkerkranich</div>
+        <div class="area">Neukölln</div>
+        <div class="desc">Takbar på parkeringshus, solnedgång</div>
+      </div>
+      <div class="card">
+        <div class="name">Holzmarkt</div>
+        <div class="area">Friedrichshain</div>
+        <div class="desc">Kreativt strandområde vid Spree</div>
+      </div>
+      <div class="card">
         <div class="name">SO36</div>
+        <div class="area">Kreuzberg</div>
         <div class="desc">Legendarisk punk/queer-klubb sedan 70-talet</div>
       </div>
       <div class="card">
         <div class="name">AEDEN</div>
+        <div class="area">Kreuzberg</div>
         <div class="desc">Techno, house, jazz, öppen scen</div>
       </div>
       <div class="card">
         <div class="name">Berghain</div>
+        <div class="area">Friedrichshain</div>
         <div class="desc">Världens mest kända technoklubb. Mörka kläder, gå efter 01:00.</div>
       </div>
     </div>
@@ -450,7 +481,7 @@
     <div class="tip-grid">
       <div class="tip">
         <strong>Tunnelbana</strong>
-        U1, U6, U7, U8. Kör hela natten fre-lör.
+        U2 från Eberswalder Str. når Mitte, Potsdamer Platz m.m. Byt till U1/U8 för Kreuzberg. Kör hela natten fre-lör.
       </div>
       <div class="tip">
         <strong>Biljetter</strong>
@@ -462,11 +493,11 @@
       </div>
       <div class="tip">
         <strong>Söndagar</strong>
-        Butiker stängda. Restauranger och kaféer öppna.
+        Butiker stängda. Restauranger, kaféer och loppisar öppna. Mauerpark!
       </div>
       <div class="tip">
         <strong>Späti-öl</strong>
-        1-2 EUR. Bar-öl 3-5 EUR. Kreuzberg är billigt.
+        1-2 EUR. Bar-öl 3-5 EUR. Berlin är billigt.
       </div>
       <div class="tip">
         <strong>Görlitzer Park</strong>
@@ -478,7 +509,7 @@
 </div>
 
 <footer>
-  Berlin-weekend 2026 &middot; Kreuzberg or bust
+  Berlin-weekend 2026 &middot; Prost!
 </footer>
 
 </body>
